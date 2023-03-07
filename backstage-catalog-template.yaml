@@ -3,21 +3,18 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: express-js-api
-  title: Express.js based api
+  name: infra-k8s-cluster
+  title: EKS Kubernetes cluster config
   description: |
-    An Express.js api template with sensible defaults
-    Docker manifest, hurl tests, CI & CD
+    Terraform templates to spin up your own EKS clusters with sensible defaults
   tags:
-    - nodejs
-    - express
-    - api
-    - hurl
-    - docker
     - k8s
+    - docker
+    - eks
+    - terraform
 spec:
   owner: user:guest
-  type: api
+  type: component
 
   # These parameters are used to generate the input form in the frontend, and are
   # used to gather input data for the execution of the template.

@@ -1,15 +1,12 @@
-# template-express-js-api
+# Kubernetes Cluster:
 
-Express js based API template with added Hurl integration tests
-
-## To run
+## to run
 
 ```bash
+terraform init
 
-# install deps
-(cd app && npm i)
+terraform plan
 
-# to run
-(cd app && npm start)
+terraform apply
 
 ```
